@@ -1,0 +1,13 @@
+        {% include "header.html" %}
+        <h1>Branches</h1>
+            {% for branch in branches_list %}
+        <ul>
+             <li><a href="branchdetails?name={{branch["name"]}}">{{branch["name"]}}</li>
+             <li><a href="branchdetails?name={{branch["name"]}}">Tomas Morato</li>
+             <li><a href="branchdetails?name={{branch["name"]}}">Eastwood</li>
+			 <li><a href="branchdetails?name={{branch["name"]}}">Tiendesitas</li>
+			 <li><a href="branchdetails?name={{branch["name"]}}">Arcovia</li>
+        </ul> 
+            {% endfor %}
+        </table>
+        {% include "footer.html" %}
